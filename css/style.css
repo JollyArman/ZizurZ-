@@ -1,0 +1,504 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+:root {
+    ---primary: rgb(5, 37, 78);
+    ---secondry: rgb(30, 112, 139);
+    --black-text: #000;
+    ---white-text: #fff;
+    ---gray--text: #787878;
+    ---raleway: 'Raleway', sans-serif;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: rgb(230, 230, 230);
+}
+
+
+/* --------------nav starts------------------------ */
+.nav-wrapper {
+    background-color: var(---secondry);
+    /* padding: 2.4rem 0; */
+
+}
+
+.nav-container {
+    width: 65%;
+    margin: 0 auto;
+    font-family: var(---raleway);
+    padding: 1rem 0rem;
+}
+
+.nav-left {
+    float: left;
+}
+
+.nav-left h1 {
+    background-color: var(---primary);
+    font-size: 3rem;
+    color: var(---white-text);
+    font-weight: 700;
+    padding: .6rem 1rem;
+    position: relative;
+    top: 2.4rem;
+}
+
+.nav-right {
+    float: right;
+}
+
+.nav-right ul {
+    position: relative;
+    top: 1.5rem;
+}
+
+.nav-right ul li {
+    float: left;
+    margin-left: 1.8rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    list-style: none;
+    padding: .5rem 1rem;
+    background-color: var(---primary);
+    border-radius: .4rem;
+}
+
+.nav-right ul li a {
+    text-decoration: none;
+    color: var(---white-text);
+}
+
+/* -------------------hair style--------banner-------------------- */
+
+.banner {
+    width: 65%;
+    margin: 5rem auto 2rem auto;
+    background-color: var(---white-text);
+    font-family: var(---raleway);
+    border: 2px solid var(---secondry);
+}
+
+.banner .left {
+    float: left;
+    width: 44%;
+}
+
+.banner .left img {
+    width: 100%;
+}
+
+.banner .right {
+    float: right;
+    width: 44%;
+}
+
+.banner .right h1 {
+    color: var(--black-text);
+    font-size: 3rem;
+    font-weight: 750;
+    margin-top: 7rem;
+    padding-right: 3rem;
+}
+
+
+
+/* ---------------------four section starts--------------- */
+
+.four-section {
+    width: 65%;
+    margin: 5rem auto 3rem auto;
+    font-family: var(---raleway);
+}
+
+.four-left {
+    width: 22%;
+    float: left;
+    margin-right: 4%;
+    background-color: var(---white-text);
+    padding-bottom: 1rem;
+}
+
+.four-left img,
+.four-right img {
+    width: 100%;
+    border: .3rem solid var(---secondry);
+    /* padding-bottom: 3rem; */
+}
+
+.four-right {
+    width: 22%;
+    float: right;
+    background-color: var(---white-text);
+    padding-bottom: 1.4rem;
+}
+
+.four-left h2,
+.four-right h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 1.2rem 0 1rem 0;
+    padding: 0 1rem;
+}
+
+.four-left p,
+.four-right p {
+    font-weight: 400;
+    color: var(---gray--text);
+    font-size: 1.2rem;
+    padding: 0 1rem;
+    /* text-align: justify; */
+    line-height: 2rem;
+}
+
+/* ---------------featured section starts ---------------- */
+
+.featured-container {
+    width: 65%;
+    margin: 5rem auto 3rem auto;
+    font-family: var(---raleway)
+}
+
+.featured-left {
+    width: 45%;
+    float: left;
+    background-color: var(---white-text);
+    padding-left: 1rem;
+    padding-bottom: 1.6rem;
+    border: .3rem solid var(---secondry);
+}
+
+.featured-left h2 {
+    display: inline-block;
+    padding: .7rem 1.2rem;
+    background-color: var(---primary);
+    color: #fff;
+    letter-spacing: .2rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    position: relative;
+    bottom: 1.5rem;
+    left: 2rem;
+}
+
+.featured-left p {
+    font-size: 1.105rem;
+    font-weight: 400;
+    color: var(---gray--text);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    letter-spacing: .1rem;
+    padding: 1rem;
+    line-height: 2rem;
+}
+
+
+.featured-right {
+    width: 45%;
+    float: right;
+
+}
+
+
+
+.div1 {
+    float: left;
+    width: 20%;
+}
+
+.div1 img {
+    width: 100%;
+}
+
+.div2 {
+    float: right;
+    width: 60%;
+}
+
+
+.div2 p {
+    font-size: 1.7rem;
+    color: var(---gray--text);
+    font-weight: 400;
+    margin-top: 2.4rem;
+}
+
+.div3 {
+    background-color: var(---secondry);
+    color: #fff;
+    padding: 1rem;
+}
+
+.div3 h2 {
+    display: inline-block;
+    padding: .7rem 1.2rem;
+    background-color: var(---primary);
+    color: #fff;
+    letter-spacing: .2rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    position: relative;
+    bottom: 1.5rem;
+    left: 2rem;
+    font-family: var(---raleway);
+}
+
+.div3 p {
+    font-size: 1.105rem;
+    font-weight: 400;
+    /* color: var(---gray--text); */
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    letter-spacing: .1rem;
+    padding: 1rem;
+    line-height: 2rem;
+}
+
+.div3 h3 {
+    float: right;
+    font-size: 1.4rem;
+    font-weight: 550;
+    padding-right: 4rem;
+}
+
+.div4 {
+    margin-top: 3.3rem;
+    background-color: var(---secondry);
+    /* padding: 2rem; */
+    height: auto;
+    font-family: var(---raleway);
+    color: #fff;
+}
+
+.div4 .div4-left {
+    width: 45%;
+    float: left;
+}
+
+.div4 .div4-left img {
+    width: 100%;
+    position: relative;
+    bottom: 2rem;
+}
+
+.div4 .div4-right {
+    width: 50%;
+    float: right;
+}
+
+.div4 .div4-right p {
+    font-size: 1.105rem;
+    font-weight: 400;
+    /* color: var(---gray--text); */
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    letter-spacing: .1rem;
+    padding: 1rem;
+    line-height: 2rem;
+
+}
+
+
+/* ---------------------footer--------------------- */
+
+.footer-container {
+    background-color: var(---secondry);
+    width: 100%;
+    padding: 5rem 0;
+    font-family: var(---raleway);
+
+}
+
+.up {
+    width: 65%;
+    margin: 0 auto;
+}
+
+.footer-left {
+    float: right;
+    margin-left: 15%;
+}
+
+
+.footer-left p {
+    font-size: 1.1rem;
+    color: white;
+    font-weight: 400;
+    letter-spacing: .1rem;
+
+}
+
+.footer-container span {
+    font-size: 1.3rem;
+
+}
+
+.footer-container i {
+    font-size: 1.8rem;
+    margin-left: 1.6rem;
+    /* background-color: var(---primary); */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------media   Query starts------------------------- */
+
+@media only screen and (max-width: 960px) {
+    html {
+        font-size: 9px;
+    }
+
+    .four-section {
+        width: 80%;
+    }
+
+    .four-left {
+        width: 45%;
+        margin-bottom: 3rem;
+
+    }
+
+    .four-right {
+        width: 45%;
+        position: relative;
+        top: 2rem;
+        right: 2.4rem;
+
+    }
+
+    .f-clear {
+        clear: both;
+        margin-top: 2rem;
+    }
+
+    .featured-container {
+        width: 90%;
+
+    }
+
+    .block {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    html {
+        font-size: 9px;
+    }
+
+    .nav-container {
+        width: 90%;
+
+    }
+
+    .banner {
+        width: 90%;
+    }
+
+    .up {
+        width: 90%;
+    }
+
+}
+
+@media only screen and (max-width: 560px) {
+    html {
+        font-size: 9px;
+    }
+
+    .nav-container {
+        width: 95%;
+
+    }
+
+    .nav-left h1 {
+        font-size: 1.8rem;
+    }
+
+    .nav-right ul li {
+        font-size: 1.1rem;
+        position: relative;
+        bottom: 1rem;
+    }
+
+    .banner .right h1 {
+        font-size: 2rem;
+        /* margin-bottom: 50px; */
+
+    }
+
+    .four-section {
+        width: 80%;
+    }
+
+    .four-left {
+        width: 100%;
+        margin-bottom: 3rem;
+        clear: both;
+
+    }
+
+    .four-right {
+        width: 100%;
+        clear: both;
+        /* margin: 0 auto; */
+        position: relative;
+        left: .7rem;
+    }
+
+    .four-section {
+        width: 90%;
+    }
+
+    .featured-left {
+        width: 100%;
+        clear: both;
+        margin: 2rem 0;
+    }
+
+    .featured-right {
+        width: 100%;
+        clear: both;
+        margin: 2rem 0;
+
+    }
+
+    .footer-left {
+        width: 100%;
+        clear: both;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .footer-container {
+        padding: 2.5rem;
+    }
+
+}
